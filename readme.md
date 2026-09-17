@@ -1,5 +1,5 @@
 # Computer Graphics Demo Showcase
-This repository is a showcase of the demonstrations I present in class for the subject **31248 Computer Graphics**. With the exception of _Week 2_ (which has been excluded) and _Week 9_ (which has sections of code adapted from the subject coordinator) the demonstrations are designed and developed by myself.
+This repository is a showcase of the demonstrations I present in class for the subject **31264 Computer Graphics**. With the exception of _Week 2_ (which has been excluded) and _Week 9_ (which has sections of code adapted from the subject coordinator) the demonstrations are designed and developed by myself.
 
 All demonstrations can be played directly in the browser at: [daveyd24.github.io/CGShowcase](https://daveyd24.github.io/CGShowcase)
 
