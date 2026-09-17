@@ -27,7 +27,7 @@ export function setSceneElements() {
         {
             color: new THREE.Color(1,1,1),
             side: THREE.DoubleSide,
-            map: new THREE.TextureLoader().load("/texture/wood.jpg")
+            map: new THREE.TextureLoader().load("../../texture/wood.jpg")
         }
     );
     const plane = new THREE.Mesh(planeGeometry, planeMaterial);

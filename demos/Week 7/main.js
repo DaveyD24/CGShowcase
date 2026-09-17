@@ -63,7 +63,7 @@ function createTerrain(size, subd, height) {
 
 async function destructTexture() {
     const loader = new THREE.TextureLoader();
-    const texture = await loader.loadAsync("/texture/perlin.png");
+    const texture = await loader.loadAsync("../../texture/perlin.png");
     texture.colorSpace = THREE.NoColorSpace;
     const image = texture.image;
 

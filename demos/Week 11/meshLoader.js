@@ -4,7 +4,7 @@ import { OBJLoader } from "../../build/loaders/OBJLoader.js";
 export async function loadObBJ(modelName, height, material) {
     const loader = new OBJLoader();
     let mesh;
-    const group = await loader.loadAsync(`/models/${modelName}.obj`);
+    const group = await loader.loadAsync(`../../models/${modelName}.obj`);
     group.traverse((child) => {
         if (child.isMesh) {
             mesh = child;
