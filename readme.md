@@ -1,7 +1,7 @@
 # Computer Graphics Demo Showcase
 This repository is a showcase of the demonstrations I present in class for the subject **31248 Computer Graphics**. With the exception of _Week 2_ (which has been excluded) and _Week 9_ (which has sections of code adapted from the subject coordinator) the demonstrations are designed and developed by myself.
 
-All demonstrations can be played directly in the browser at: (--link--)
+All demonstrations can be played directly in the browser at: [daveyd24.github.io/CGShowcase](https://daveyd24.github.io/CGShowcase)
 
 
 ### Week 1
@@ -61,6 +61,6 @@ _**Learning objective**: Implementing shaders_
 ### Week 11
 _**Learning objective**: Bonus demo, incorporating ThreeJS with HTML and CSS_
 > [!NOTE]
-> Week 11 officially has no demo. This was provided as a bonus to hopefully provide some inspiration
+> Week 11 officially has no demo. This was provided as a bonus to hopefully provide some inspiration for further uses of ThreeJS.
 
 ![gif of week 11's demonstration playing](/assets/week11.gif)
