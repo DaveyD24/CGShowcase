@@ -1,0 +1,34 @@
+import * as THREE from "/build/three.module.js";
+
+export let scene;
+export let camera;
+export let renderer;
+export let gui;
+
+export function setScene() {
+    scene = new THREE.Scene();
+    const renderView = document.querySelector(".render-view");
+    const aspectRatio = renderView.clientWidth / renderView.clientHeight;
+    camera = new THREE.PerspectiveCamera(45, aspectRatio, 0.1, 1000);
+
+    camera.position.set(0, 10, 40);
+    camera.lookAt(0,0,1);
+
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize(renderView.clientWidth, renderView.clientHeight);
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    scene.background = new THREE.Color("#e3e3ff");
+    document.querySelector(".render-view").appendChild(renderer.domElement);
+}
+
+//Event Listeners
+function resizeRenderView() {
+    const width = document.querySelector(".render-view").clientWidth;
+    const height = document.querySelector(".render-view").clientHeight;
+    renderer.setSize(width,height);
+    camera.aspect = width/height;
+    camera.updateProjectionMatrix();
+    renderer.render(scene,camera);
+}
+window.addEventListener("resize", resizeRenderView);

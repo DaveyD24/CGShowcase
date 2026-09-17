@@ -1,0 +1,30 @@
+Wooden chair HD by Artec 3D
+https://www.artec3d.com/3d-models/wooden-chair-hd
+
+World map image by Nikhilesh Boppana.
+Provided at:
+    https://unsplash.com/photos/a-map-of-the-world-made-out-of-wood-j9jBsNg2pSw
+Under the Unsplash licence:
+    https://unsplash.com/license
+
+Brick image and normal by rubberduck.
+Provided at:
+    https://opengameart.org/content/50-free-textures-4-normalmaps
+Under the public domain
+
+Stand model by Jarlan Perez.
+Provided at:
+    https://poly.pizza/m/3p23RpcD--P
+Under the Creative Commons 3.0 license:
+    https://creativecommons.org/licenses/by/3.0/
+
+
+css/background.css by qhns3
+https://uiverse.io/qhns3/stupid-lizard-4
+
+Copyright - 2026 milegelu (迷了个路) 
+Copyright - 2026 qhns3  
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
