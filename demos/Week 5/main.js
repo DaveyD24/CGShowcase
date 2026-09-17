@@ -1,7 +1,7 @@
-import * as THREE from "/build/three.module.js"
+import * as THREE from "../../build/three.module.js"
 import {scene, camera, renderer, setScene, setSceneElements, wallMesh, animatePlanets} from "./setup.js"
-import {OrbitControls} from "/build/controls/OrbitControls.js";
-import {GUI} from "/build/gui/lil-gui.module.min.js";
+import {OrbitControls} from "../../build/controls/OrbitControls.js";
+import {GUI} from "../../build/gui/lil-gui.module.min.js";
 
 let sphereMesh;
 let spotlightHelper;

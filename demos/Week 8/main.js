@@ -1,7 +1,7 @@
-import * as THREE from "/build/three.module.js";
+import * as THREE from "../../build/three.module.js";
 import {scene, renderer, camera, setScene, setSceneElements, setSceneLighting} from "./setup.js";
-import {OrbitControls} from "/build/controls/OrbitControls.js";
-import {OBJLoader} from "/build/loaders/OBJLoader.js";
+import {OrbitControls} from "../../build/controls/OrbitControls.js";
+import {OBJLoader} from "../../build/loaders/OBJLoader.js";
 
 const clock = new THREE.Clock();
 const SPEED = 5;
@@ -18,8 +18,8 @@ async function createWorld() {
     const earthGeometry = new THREE.SphereGeometry(1.5);
     const earthMaterial = new THREE.MeshPhongMaterial({
         wireframe: false,
-        map: new THREE.TextureLoader().load("/texture/world.jpg"),
-        normalMap : new THREE.TextureLoader().load("/normal/world.png"),
+        map: new THREE.TextureLoader().load("../../texture/world.jpg"),
+        normalMap : new THREE.TextureLoader().load("../../texture/normal/world.png"),
         side: THREE.DoubleSide
     });
     const earth = new THREE.Mesh(earthGeometry, earthMaterial);
@@ -42,8 +42,8 @@ async function createWorld() {
 function createWall() {
     const wallGeometry = new THREE.BoxGeometry(10,10,1);
     const wallMaterial = new THREE.MeshLambertMaterial({
-        map: new THREE.TextureLoader().load("/texture/brick.jpg"),
-        normalMap: new THREE.TextureLoader().load("texture/normal/brick.jpg")
+        map: new THREE.TextureLoader().load("../../texture/brick.jpg"),
+        normalMap: new THREE.TextureLoader().load("../../texture/normal/brick.jpg")
     });
     const wall = new THREE.Mesh(wallGeometry, wallMaterial);
     wall.position.z -= 5.5;
@@ -53,7 +53,7 @@ function createWall() {
 async function loadOBJ(modelName) {
     const loader = new OBJLoader();
     let mesh;
-    const group = await loader.loadAsync(`/models/${modelName}`);
+    const group = await loader.loadAsync(`../../models/${modelName}`);
     group.traverse((child) => {
         if (child.isMesh) {
             mesh = child;

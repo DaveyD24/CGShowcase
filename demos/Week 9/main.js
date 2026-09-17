@@ -1,4 +1,4 @@
-import * as THREE from "/build/three.module.js";
+import * as THREE from "../../build/three.module.js";
 import {setScene, setSceneElements, scene, camera, minimapCamera, renderer, minimapRenderer, Pos, Dir, player, PLANE_SIZE, plane} from "./setup.js";
 
 setScene();

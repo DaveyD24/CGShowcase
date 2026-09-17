@@ -1,5 +1,5 @@
-import * as THREE from "/build/three.module.js";
-import { OBJLoader } from "/build/loaders/OBJLoader.js";
+import * as THREE from "../../build/three.module.js";
+import { OBJLoader } from "../../build/loaders/OBJLoader.js";
 
 export async function loadObBJ(modelName, height, material) {
     const loader = new OBJLoader();

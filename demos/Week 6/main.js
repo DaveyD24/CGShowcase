@@ -1,8 +1,8 @@
-import * as THREE from "/build/three.module.js";
+import * as THREE from "../../build/three.module.js";
 import {scene, camera, renderer, setScene, setSceneElements, setSceneLighting, discs, CLOCK} from "./setup.js";
-import {PLYLoader} from "/build/loaders/PLYLoader.js";
-import {OBJLoader} from "/build/loaders/OBJLoader.js";
-import {OrbitControls} from "/build/controls/OrbitControls.js";
+import {PLYLoader} from "../../build/loaders/PLYLoader.js";
+import {OBJLoader} from "../../build/loaders/OBJLoader.js";
+import {OrbitControls} from "../../build/controls/OrbitControls.js";
 
 setScene();
 setSceneElements();
@@ -45,7 +45,7 @@ async function addToMuseum(modelName, disc) {
 async function loadOBJ(modelName) {
     const loader = new OBJLoader();
     let mesh;
-    const group = await loader.loadAsync(`/models/${modelName}`);
+    const group = await loader.loadAsync(`../../models/${modelName}`);
     group.traverse((child) => {
         if (child.isMesh) {
             mesh = child;
@@ -57,7 +57,7 @@ async function loadOBJ(modelName) {
 
 async function loadPLY(modelName) {
     const loader = new PLYLoader();
-    const geometry = await loader.loadAsync(`/models/${modelName}`);
+    const geometry = await loader.loadAsync(`../../models/${modelName}`);
     geometry.computeVertexNormals();
     const mesh = new THREE.Mesh(geometry, null);
     return mesh;

@@ -1,5 +1,5 @@
 import { main, logo, setScene, setSceneElements, setLogoScene} from "./setup.js";
-import * as THREE from "/build/three.module.js";
+import * as THREE from "../../build/three.module.js";
 import {LERP_SPEED, CAMERA_ROTATION_OFFSET, ROTATION_SPEED} from "./constants.js";
 import { loadObBJ } from "./meshLoader.js"
 
