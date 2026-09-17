@@ -1,4 +1,4 @@
-import * as THREE from "/build/three.module.js";
+import * as THREE from "../../build/three.module.js";
 
 //Generate a 0 or 1 at random for each red, green and blue value
 //If it is perfect black, return white instead
